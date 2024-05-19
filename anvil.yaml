@@ -1,9 +1,14 @@
-allow_embedding: false
-package_name: Rally_App_1
-name: Rally App 1
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+package_name: AITeller_v0_3
+allow_embedding: true
+name: AITeller v0.3
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+metadata: {title: Trabajo final de master en tecnologías del lenguaje, logo_img: 'asset:pluma_ico360.jpg'}
 startup_form: Form1
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Roboto+Condensed:wght@300;400;700&display=swap"
     rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
-services: []
+uplink_visible: true

@@ -4,6 +4,8 @@ unique_ids:
   modules: {}
   server_modules: {}
   assets:
+    pluma_ico360.jpg: '1716134684059463321394868.11584'
     standard-page.html: 2KBXFTZ7NJQMS4WEWG24D6NHY7VWQYPN
     theme.css: 45BLIG25PS4QYE4VMWMXMLSIDNOSF3AL
+    titulocab.png: '1716134415278689732743463.6895'
   scripts: {}
