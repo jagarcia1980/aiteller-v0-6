@@ -7,7 +7,11 @@ components:
   properties: {col_widths: '{}'}
   name: column_panel_1
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: rich_text_1
+    properties: {format: restricted_html}
+    type: RichText
+    layout_properties: {grid_position: 'EAUYIC,FCMPXR'}
 - name: image_1
   properties: {source: _/theme/titulocab.png}
   type: Image
@@ -21,3 +25,4 @@ components:
     properties: {text: 'PASO 1: Crear trama general'}
     type: Button
     layout_properties: {grid_position: 'MCYKFX,OIETGA'}
+    event_bindings: {click: button_1_click}
