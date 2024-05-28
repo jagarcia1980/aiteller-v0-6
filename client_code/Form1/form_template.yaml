@@ -16,6 +16,10 @@ components:
     properties: {format: restricted_html}
     type: RichText
     layout_properties: {grid_position: 'LHBNPQ,EHJIGS'}
+  - name: spacer_2
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'LXDICE,SMGEMA'}
   - name: label_2
     properties: {text: Si tienes un código de salvado por favor introducelo aquí para continuar la sesión de escritura}
     type: Label
@@ -25,7 +29,7 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'PXJMZB,JNSNZG'}
   - name: label_1
-    properties: {text: Indica el lugar donde comenzará la historia}
+    properties: {text: Indica el lugar donde comenzará la historia, icon: 'fa:anchor'}
     type: Label
     layout_properties: {grid_position: 'GKTXQY,KUSPSO'}
   - name: txtlugar
@@ -33,7 +37,7 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'GKTXQY,FZLIPJ'}
   - name: label_3
-    properties: {text: Elije la temática para la historia}
+    properties: {text: Elije la temática para la historia, icon: 'fa:assistive-listening-systems'}
     type: Label
     layout_properties: {grid_position: 'RRCJIP,NRBSPJ'}
   - name: txttematica
@@ -41,11 +45,13 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'RRCJIP,BXFVLS'}
   - name: label_4
-    properties: {text: Descripción del protagonista}
+    properties: {text: Descripción del protagonista, icon: 'fa:angellist', visible: false}
     type: Label
     layout_properties: {grid_position: 'HCQWLD,KOVHMU'}
-  - name: text_area_1
-    properties: {}
+  - name: txtprotagonista
+    properties: {text: Mujer joven de raza hispano-china con el pelo recojido en una cola,
+      placeholder: p.e. Mujer joven de raza hispano-china con el pelo recojido en una cola,
+      visible: false}
     type: TextArea
     layout_properties: {grid_position: 'HCQWLD,UHCWFN'}
   - name: spacer_1
@@ -57,10 +63,11 @@ components:
     type: Button
     layout_properties: {grid_position: 'HUJOUQ,KCYVQK'}
     event_bindings: {click: button_2_click}
-  - name: spacer_2
-    properties: {height: 32}
-    type: Spacer
-    layout_properties: {grid_position: 'IEIPFJ,TMUNFC'}
+  - name: button_4
+    properties: {text: GENERAR, visible: false}
+    type: Button
+    layout_properties: {grid_position: 'HUJOUQ,CCORDR'}
+    event_bindings: {click: button_4_click}
 - name: image_1
   properties: {source: _/theme/titulocab.png}
   type: Image

@@ -26,8 +26,23 @@ class Form1(Form1Template):
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.label_2.visible=False
+    self.label_1.visible=False
     self.txtcodigo.visible=False
-    
+    self.label_2.visible=False
+    self.txtlugar.visible=False
+    self.label_3.visible=False
+    self.txttematica.visible=False
+    self.label_4.visible=True
+    self.txtprotagonista.visible=True
+    self.button_2.visible=False
+    self.button_4.visible=True
+    self.rich_text_1.content=""
+    pass
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_1.content=anvil.server.call('callable_paso1_3', 
+      self.txtcodigo.text,self.txtlugar.text,self.txttematica.text)
+
     pass
     
