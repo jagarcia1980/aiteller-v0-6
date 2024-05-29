@@ -12,6 +12,16 @@ class Form1(Form1Template):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
+    self.label_1.visible=True
+    self.txtcodigo.visible=True
+    self.label_2.visible=True
+    self.txtlugar.visible=True
+    self.label_3.visible=True
+    self.txttematica.visible=True
+    self.label_4.visible=False
+    self.txtprotagonista.visible=False
+    self.button_2.visible=True
+    self.button_4.visible=False
     
     self.rich_text_1.content=""
     pass
