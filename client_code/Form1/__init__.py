@@ -53,6 +53,6 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     self.rich_text_1.content=anvil.server.call('callable_paso1_3', 
       self.txtprotagonista.text)
-
+    self.button_4.text="VOLVER A GENERAR"
     pass
     

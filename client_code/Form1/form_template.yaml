@@ -87,3 +87,7 @@ components:
     type: Button
     layout_properties: {grid_position: 'SYQSJL,VREWQT'}
     event_bindings: {click: button_3_click}
+  - name: button_5
+    properties: {text: 'PASO 3: GENERAR SEMILLA DE HISTORIA'}
+    type: Button
+    layout_properties: {grid_position: 'NLHLFY,HFGUWD'}
