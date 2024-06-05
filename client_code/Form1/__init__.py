@@ -28,10 +28,10 @@ class Form1(Form1Template):
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    
+    self.button_3.enabled=True
+    self.button_2.text="MODIFICAR VALORES"
     self.rich_text_1.content=anvil.server.call('callable_paso1_2', 
       self.txtcodigo.text,self.txtlugar.text,self.txttematica.text)
-
     pass
 
   def button_3_click(self, **event_args):
@@ -53,6 +53,12 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     self.rich_text_1.content=anvil.server.call('callable_paso1_3', 
       self.txtprotagonista.text)
+    self.button_5.enabled=True
     self.button_4.text="VOLVER A GENERAR"
+    pass
+
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.rich_text_1.content=anvil.server.call('callable_paso1_4', "")
     pass
     

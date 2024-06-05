@@ -83,11 +83,12 @@ components:
     layout_properties: {grid_position: 'MCYKFX,OIETGA'}
     event_bindings: {click: button_1_click}
   - name: button_3
-    properties: {text: 'PASO2: Generar protagonista'}
+    properties: {text: 'PASO2: Generar protagonista', enabled: false}
     type: Button
     layout_properties: {grid_position: 'SYQSJL,VREWQT'}
     event_bindings: {click: button_3_click}
   - name: button_5
-    properties: {text: 'PASO 3: GENERAR SEMILLA DE HISTORIA'}
+    properties: {text: 'PASO 3: GENERAR SEMILLA DE HISTORIA', enabled: false}
     type: Button
     layout_properties: {grid_position: 'NLHLFY,HFGUWD'}
+    event_bindings: {click: button_5_click}
