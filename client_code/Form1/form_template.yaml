@@ -63,8 +63,13 @@ components:
   - name: button_2
     properties: {text: Confirmar}
     type: Button
-    layout_properties: {grid_position: 'HUJOUQ,KCYVQK'}
+    layout_properties: {grid_position: 'HUJOUQ,KCYVQK JENSWY,YDYIZX'}
     event_bindings: {click: button_2_click}
+  - name: button_6
+    properties: {text: REGENERAR, visible: false}
+    type: Button
+    layout_properties: {grid_position: 'HUJOUQ,KCYVQK TLVLVQ,QBQYTN'}
+    event_bindings: {click: button_6_click}
   - name: button_4
     properties: {text: GENERAR, visible: false}
     type: Button

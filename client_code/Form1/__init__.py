@@ -72,5 +72,11 @@ class Form1(Form1Template):
     self.rich_text_1.visible=False
     self.rich_text_2.visible=True
     self.rich_text_2.content=anvil.server.call('callable_paso1_4', "")
+    self.button_6.visible=True
+    pass
+
+  def button_6_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.button_5_click()
     pass
     
