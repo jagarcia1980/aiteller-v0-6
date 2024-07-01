@@ -73,10 +73,31 @@ class Form1(Form1Template):
     self.rich_text_2.visible=True
     self.rich_text_2.content=anvil.server.call('callable_paso1_4', "")
     self.button_6.visible=True
+    self.button_7.enabled=True
     pass
 
   def button_6_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.button_5_click()
+    pass
+
+  def button_7_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.label_1.visible=False
+    self.txtcodigo.visible=False
+    self.label_2.visible=False
+    self.txtlugar.visible=False
+    self.label_3.visible=False
+    self.txttematica.visible=False
+    self.label_4.visible=False
+    self.txtprotagonista.visible=False
+    self.button_2.visible=False
+    self.button_4.visible=False
+    self.button_6.visible=False
+    self.rich_text_1.visible=False
+    self.rich_text_2.visible=False
+    self.rich_text_3.visible=True
+    self.rich_text_3.content=anvil.server.call('callable_paso1_5', "")
+    
     pass
     

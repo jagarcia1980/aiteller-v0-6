@@ -20,6 +20,10 @@ components:
     properties: {visible: false, format: restricted_html}
     type: RichText
     layout_properties: {grid_position: 'JLUBXS,MJJWAS'}
+  - name: rich_text_3
+    properties: {format: restricted_html, visible: false}
+    type: RichText
+    layout_properties: {grid_position: 'QXSUFC,YUHNIL'}
   - name: spacer_2
     properties: {height: 32}
     type: Spacer
@@ -99,3 +103,8 @@ components:
     type: Button
     layout_properties: {grid_position: 'NLHLFY,HFGUWD'}
     event_bindings: {click: button_5_click}
+  - name: button_7
+    properties: {text: 'PASO 4: GUARDAR SEMILLA', visible: true, enabled: false}
+    type: Button
+    layout_properties: {grid_position: 'ETCHCA,ZVXSTE'}
+    event_bindings: {click: button_7_click}
