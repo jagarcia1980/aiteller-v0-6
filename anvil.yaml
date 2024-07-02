@@ -2,9 +2,9 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-package_name: AITeller_v0_5
+package_name: AITeller_v0_6
 allow_embedding: true
-name: AITeller v0.5
+name: AITeller v0.6
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox, server_spec: null}
 metadata: {title: Trabajo final de master en tecnologías del lenguaje, logo_img: 'asset:pluma_ico360.jpg'}
 startup_form: Form1
