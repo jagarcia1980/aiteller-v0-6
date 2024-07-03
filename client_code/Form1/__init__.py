@@ -99,6 +99,6 @@ class Form1(Form1Template):
     self.rich_text_3.visible=True
     self.rich_text_3.content=anvil.server.call('callable_paso1_5', "")
     self.rich_text_3.content=self.rich_text_3.content+"<br/><br/>" + anvil.server.call('callable_paso1_6', "")
-    self.rich_text_3.content=self.rich_text_3.content+"<br/><br/>" + anvil.server.call('fetch_and_display_last_entries', "")
+    self.rich_text_3.content=self.rich_text_3.content+"<br/><br/>" + anvil.server.call('callable_paso1_7', "")
     pass
     
