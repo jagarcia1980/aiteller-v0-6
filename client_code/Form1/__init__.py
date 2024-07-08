@@ -73,8 +73,9 @@ class Form1(Form1Template):
     self.button_4.visible=False
     self.rich_text_1.visible=False
     self.rich_text_2.visible=True
-    self.rich_text_2.content=anvil.server.call('callable_paso1_4', "")
+    self.rich_text_2.content=anvil.server.call('callable_paso1_4')
     self.button_6.visible=True
+    self.button_5.enabled=False
     self.button_7.enabled=True
     pass
 
@@ -99,7 +100,7 @@ class Form1(Form1Template):
     self.rich_text_1.visible=False
     self.rich_text_2.visible=False
     self.rich_text_3.visible=True
-    self.rich_text_3.content=anvil.server.call('callable_paso1_5', "")
+    self.rich_text_3.content=anvil.server.call('callable_paso1_5')
     self.rich_text_3.content=self.rich_text_3.content+"<br/><br/>" + anvil.server.call('callable_paso1_6', "")
     self.rich_text_3.content=self.rich_text_3.content+"<br/><br/>" + anvil.server.call('callable_paso1_7', "")
     pass
