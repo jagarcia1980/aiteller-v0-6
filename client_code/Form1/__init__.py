@@ -104,4 +104,8 @@ class Form1(Form1Template):
     self.rich_text_3.content=self.rich_text_3.content+"<br/><br/>" + anvil.server.call('callable_paso1_6', "")
     self.rich_text_3.content=self.rich_text_3.content+"<br/><br/>" + anvil.server.call('callable_paso1_7', "")
     pass
+
+  def txtcodigo_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
     

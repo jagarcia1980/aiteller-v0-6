@@ -36,6 +36,7 @@ components:
     properties: {placeholder: p.e XR45T, background: 'theme:Tertiary'}
     type: TextBox
     layout_properties: {grid_position: 'PXJMZB,JNSNZG'}
+    event_bindings: {pressed_enter: txtcodigo_pressed_enter}
   - name: label_1
     properties: {text: Indica el lugar donde comenzará la historia, icon: 'fa:anchor'}
     type: Label
