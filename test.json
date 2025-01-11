@@ -1,0 +1,62 @@
+{
+    "metadata": {
+        "source_path": "n/a: synthetic data for LLM Comparator demo",
+        "custom_fields_schema": [
+            {
+                "name": "language",
+                "type": "per_model_category"
+            }
+        ]
+    },
+    "models": [
+        {
+            "name": "Modelo alfa"
+        },
+        {
+            "name": "Modelo beta"
+        }
+    ],
+    "examples": [
+        {
+            "input_text": "Descripción de una narrativa ficticia.",
+            "tags": [
+                "creative_writing"
+            ],
+            "output_text_a": "Incoherencias detectadas: \n1. Incoherencia de Personaje: El fragmento menciona a Manuel como jefe de la expedición, pero en el índice y el contexto proporcionado, no se menciona este personaje.\n2. Incoherencia de Lenguaje: El texto está formateado en HTML, lo cual no es propio de un libro tradicional.",
+            "output_text_b": "Incoherencias detectadas: \n1. El fragmento contiene un texto que sugiere la intervención de una inteligencia artificial.\n2. El inventario de objetos de los personajes está completamente vacío.",
+            "score": 0.5,
+            "individual_rater_scores": [
+                {
+                    "score": 1.0,
+                    "rating_label": "A is better",
+                    "is_flipped": false,
+                    "rationale": "Modelo alfa tiene una puntuación general más alta y las incoherencias son menos intrusivas."
+                },
+                {
+                    "score": 1.5,
+                    "rating_label": "A is much better",
+                    "is_flipped": false,
+                    "rationale": "Modelo alfa score es significativamente mejor que el de Modelo beta."
+                },
+                {
+                    "score": -0.5,
+                    "rating_label": "B is slightly better",
+                    "is_flipped": true,
+                    "rationale": "Modelo beta es más claro en describir las incoherencias específicas del escenario."
+                },
+                {
+                    "score": 0.0,
+                    "rating_label": "same",
+                    "is_flipped": true,
+                    "rationale": "Ambos modelos tienen incoherencias significativas, aunque de naturaleza distinta."
+                }
+            ],
+            "custom_fields": {
+                "language": [
+                    "Spanish",
+                    "Spanish"
+                ]
+            }
+        }
+    ]
+}
