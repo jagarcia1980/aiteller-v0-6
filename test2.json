@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "source_path": "n/a: synthetic data for LLM Comparator demo",
+    "custom_fields_schema": [
+      {"name": "language", "type": "per_model_category"}
+    ]
+  },
+  "models": [
+    {"name": "Modelo A"},
+    {"name": "Modelo B"}
+  ],
+  "examples": [
+    {
+      "input_text": "Análisis de una narrativa ficticia generada por modelos.",
+      "tags": ["creative_writing"],
+      "output_text_a": "Incoherencias: \n1. Personaje de Elena aparece sin ser mencionado en el índice ni resumen del libro.",
+      "output_text_b": "Incoherencias: \n1. El fragmento no sigue la estructura planeada del Capítulo 1.\n2. Ocultación de personajes como Alejandro y Elena.",
+      "score": 0.5,
+      "individual_rater_scores": [
+        {
+          "score": 1.0,
+          "rating_label": "Modelo A tiene una puntuación general más alta",
+          "is_flipped": false,
+          "rationale": "El Modelo A presenta menos incoherencias y mantiene mejor la coherencia de personajes."
+        },
+        {
+          "score": 1.5,
+          "rating_label": "Modelo A es mucho mejor",
+          "is_flipped": false,
+          "rationale": "Menor cantidad de inconsistencias y mejor alineación con la narrativa planeada."
+        },
+        {
+          "score": -0.5,
+          "rating_label": "Modelo B es ligeramente mejor",
+          "is_flipped": true,
+          "rationale": "Aunque el Modelo B es inconsistente, identifica problemas generales de estructura más claramente."
+        },
+        {
+          "score": 0.0,
+          "rating_label": "Ambos modelos son problemáticos",
+          "is_flipped": true,
+          "rationale": "Ambos modelos presentan incoherencias significativas pero en distintos aspectos."
+        }
+      ],
+      "custom_fields": {
+        "language": ["Spanish", "Spanish"]
+      }
+    }
+  ]
+}
