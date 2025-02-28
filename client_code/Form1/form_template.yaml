@@ -1,111 +1,111 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: column_panel_1
-  layout_properties: {slot: default}
-  components:
-  - name: spacer_3
+- components:
+  - layout_properties: {grid_position: 'DLFXRD,ZYDTYO'}
+    name: spacer_3
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'DLFXRD,ZYDTYO'}
-  - name: rich_text_1
+  - layout_properties: {grid_position: 'LHBNPQ,EHJIGS'}
+    name: rich_text_1
     properties: {format: restricted_html}
     type: RichText
-    layout_properties: {grid_position: 'LHBNPQ,EHJIGS'}
-  - name: rich_text_2
-    properties: {visible: false, format: restricted_html}
-    type: RichText
-    layout_properties: {grid_position: 'JLUBXS,MJJWAS'}
-  - name: rich_text_3
+  - layout_properties: {grid_position: 'JLUBXS,MJJWAS'}
+    name: rich_text_2
     properties: {format: restricted_html, visible: false}
     type: RichText
-    layout_properties: {grid_position: 'QXSUFC,YUHNIL'}
-  - name: spacer_2
+  - layout_properties: {grid_position: 'QXSUFC,YUHNIL'}
+    name: rich_text_3
+    properties: {format: restricted_html, visible: false}
+    type: RichText
+  - layout_properties: {grid_position: 'LXDICE,SMGEMA'}
+    name: spacer_2
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'LXDICE,SMGEMA'}
-  - name: label_2
+  - layout_properties: {grid_position: 'PXJMZB,RWMOBY'}
+    name: label_2
     properties: {text: Si tienes un código de salvado por favor introducelo aquí para continuar la sesión de escritura}
     type: Label
-    layout_properties: {grid_position: 'PXJMZB,RWMOBY'}
-  - name: txtcodigo
-    properties: {placeholder: p.e XR45T, background: 'theme:Tertiary'}
-    type: TextBox
+  - event_bindings: {pressed_enter: txtcodigo_pressed_enter}
     layout_properties: {grid_position: 'PXJMZB,JNSNZG'}
-    event_bindings: {pressed_enter: txtcodigo_pressed_enter}
-  - name: label_1
-    properties: {text: Indica el lugar donde comenzará la historia, icon: 'fa:anchor'}
+    name: txtcodigo
+    properties: {background: 'theme:Tertiary', placeholder: p.e XR45T}
+    type: TextBox
+  - layout_properties: {grid_position: 'GKTXQY,KUSPSO'}
+    name: label_1
+    properties: {icon: 'fa:anchor', text: Indica el lugar donde comenzará la historia}
     type: Label
-    layout_properties: {grid_position: 'GKTXQY,KUSPSO'}
-  - name: txtlugar
+  - layout_properties: {grid_position: 'GKTXQY,FZLIPJ'}
+    name: txtlugar
     properties: {placeholder: p.e Madrid (España)}
     type: TextBox
-    layout_properties: {grid_position: 'GKTXQY,FZLIPJ'}
-  - name: label_3
-    properties: {text: Elije la temática para la historia, icon: 'fa:assistive-listening-systems'}
+  - layout_properties: {grid_position: 'RRCJIP,NRBSPJ'}
+    name: label_3
+    properties: {icon: 'fa:assistive-listening-systems', text: Elije la temática para la historia}
     type: Label
-    layout_properties: {grid_position: 'RRCJIP,NRBSPJ'}
-  - name: txttematica
+  - layout_properties: {grid_position: 'RRCJIP,BXFVLS'}
+    name: txttematica
     properties: {placeholder: 'p.e una pandemia zombie, un mes después'}
     type: TextBox
-    layout_properties: {grid_position: 'RRCJIP,BXFVLS'}
-  - name: label_4
-    properties: {text: Descripción del protagonista, icon: 'fa:angellist', visible: false}
+  - layout_properties: {grid_position: 'HCQWLD,KOVHMU'}
+    name: label_4
+    properties: {icon: 'fa:angellist', text: Descripción del protagonista, visible: false}
     type: Label
-    layout_properties: {grid_position: 'HCQWLD,KOVHMU'}
-  - name: txtprotagonista
-    properties: {text: Mujer joven de raza hispano-china con el pelo recojido en una cola, placeholder: p.e. Mujer joven de raza hispano-china con el pelo recojido en una cola, visible: false}
+  - layout_properties: {grid_position: 'HCQWLD,UHCWFN'}
+    name: txtprotagonista
+    properties: {placeholder: p.e. Mujer joven de raza hispano-china con el pelo recojido en una cola, text: Mujer joven de raza hispano-china con el pelo recojido en una cola, visible: false}
     type: TextArea
-    layout_properties: {grid_position: 'HCQWLD,UHCWFN'}
-  - name: spacer_1
+  - layout_properties: {grid_position: 'JQJSKW,YEQMXC'}
+    name: spacer_1
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'JQJSKW,YEQMXC'}
-  - name: button_2
+  - event_bindings: {click: button_2_click}
+    layout_properties: {grid_position: 'HUJOUQ,KCYVQK JENSWY,YDYIZX'}
+    name: button_2
     properties: {text: Confirmar}
     type: Button
-    layout_properties: {grid_position: 'HUJOUQ,KCYVQK JENSWY,YDYIZX'}
-    event_bindings: {click: button_2_click}
-  - name: button_6
+  - event_bindings: {click: button_6_click}
+    layout_properties: {grid_position: 'HUJOUQ,KCYVQK TLVLVQ,QBQYTN'}
+    name: button_6
     properties: {text: REGENERAR, visible: false}
     type: Button
-    layout_properties: {grid_position: 'HUJOUQ,KCYVQK TLVLVQ,QBQYTN'}
-    event_bindings: {click: button_6_click}
-  - name: button_4
+  - event_bindings: {click: button_4_click}
+    layout_properties: {grid_position: 'HUJOUQ,CCORDR'}
+    name: button_4
     properties: {text: GENERAR, visible: false}
     type: Button
-    layout_properties: {grid_position: 'HUJOUQ,CCORDR'}
-    event_bindings: {click: button_4_click}
-- name: image_1
+  layout_properties: {slot: default}
+  name: column_panel_1
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: logo}
+  name: image_1
   properties: {source: _/theme/tfmtl.png}
   type: Image
-  layout_properties: {slot: logo}
-- name: column_panel_2
-  properties: {}
-  type: ColumnPanel
-  layout_properties: {slot: left-nav}
-  components:
-  - name: button_1
+- components:
+  - event_bindings: {click: button_1_click}
+    layout_properties: {grid_position: 'MCYKFX,OIETGA'}
+    name: button_1
     properties: {text: 'PASO 1: Crear trama general'}
     type: Button
-    layout_properties: {grid_position: 'MCYKFX,OIETGA'}
-    event_bindings: {click: button_1_click}
-  - name: button_3
-    properties: {text: 'PASO2: Generar protagonista', enabled: false}
-    type: Button
+  - event_bindings: {click: button_3_click}
     layout_properties: {grid_position: 'SYQSJL,VREWQT'}
-    event_bindings: {click: button_3_click}
-  - name: button_5
-    properties: {text: 'PASO 3: GENERAR SEMILLA DE HISTORIA', enabled: false}
+    name: button_3
+    properties: {enabled: false, text: 'PASO2: Generar protagonista'}
     type: Button
+  - event_bindings: {click: button_5_click}
     layout_properties: {grid_position: 'NLHLFY,HFGUWD'}
-    event_bindings: {click: button_5_click}
-  - name: button_7
-    properties: {text: 'PASO 4: GUARDAR SEMILLA', visible: true, enabled: false}
+    name: button_5
+    properties: {enabled: false, text: 'PASO 3: GENERAR SEMILLA DE HISTORIA'}
     type: Button
+  - event_bindings: {click: button_7_click}
     layout_properties: {grid_position: 'ETCHCA,ZVXSTE'}
-    event_bindings: {click: button_7_click}
+    name: button_7
+    properties: {enabled: false, text: 'PASO 4: GUARDAR SEMILLA', visible: true}
+    type: Button
+  layout_properties: {slot: left-nav}
+  name: column_panel_2
+  properties: {}
+  type: ColumnPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

@@ -1,12 +1,12 @@
-services:
-- source: /runtime/services/tables.yml
-  client_config: {}
-  server_config: {}
-package_name: Generador_historias__AITeller_v0_7
 allow_embedding: true
-name: Generador historias. AITeller v0.7
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox, server_spec: null}
-metadata: {title: Trabajo final de master en tecnologías del lenguaje, logo_img: 'asset:pluma_ico360.jpg', description: AI Story Teller. Parte 1}
-startup_form: Form1
+metadata: {description: AI Story Teller. Parte 1, logo_img: 'asset:pluma_ico360.jpg', title: Trabajo final de master en tecnologías del lenguaje}
+name: Generador historias. AITeller v0.8
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
+package_name: Generador_historias__AITeller_v0_8
+runtime_options: {client_version: '3', server_spec: null, server_version: python3-sandbox, version: 2}
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+startup_form: Form1
 uplink_visible: true
